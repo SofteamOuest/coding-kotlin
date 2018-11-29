@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="UTF-8">
+	<title>Data list</title>
+
+	<link rel="stylesheet" href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+Hello <span th:text="${name}">Bob</span> :)
+
+
+<form type="submit" method="get">
+	<input type="text" name="name"><input type="submit" value="Rechercher">
+</form>
+
+<table class="table table-hover table-striped">
+	<tr><th>id</th><th>imaison</th><th>prenom</th><th>nom</th></tr>
+
+	<tr th:each="s : ${list}">
+		<td th:text="${s.id}">id</td>
+		<td th:text="${s.maison}">imaison</td>
+		<td th:text="${s.prenom}">prenom</td>
+		<td th:text="${s.nom}">nom</td></tr>
+
+</table>
+</body>
+</html>

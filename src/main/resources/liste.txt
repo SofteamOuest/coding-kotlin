@@ -1,0 +1,8 @@
+1|Lannister|Tyrion|Lannister
+2|Lannister|Jaime|Lannister
+3|Lannister|Cersei|Lannister
+4|Stark|Jon|Snow
+5|Stark|Sansa|Stark
+6|Stark|Arya|Stark
+7|Targaryen|Daenerys|Targaryen
+8|Targaryen|Viserys|Targaryen
